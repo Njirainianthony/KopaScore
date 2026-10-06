@@ -72,7 +72,7 @@ if submit_button:
     }
 
     try:
-        response = requests.post("https://kopascore.onrender.com", json=payload)
+        response = requests.post("https://kopascore.onrender.com/predict", json=payload)
 
         if response.status_code == 200:
             res = response.json()
